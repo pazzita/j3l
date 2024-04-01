@@ -1,0 +1,643 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+      <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-167256399-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-167256399-1');
+</script>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="We sell, cater and deliver artisan ice lollies and gelato to your home, office, festival, or private event."/>
+    <title>Jolly Lovely Lolly Lady | Ice cream and ice lollies on wheels</title>
+    <link rel="stylesheet" href="./build/tailwind.css">
+    <link rel="shortcut icon" type="image/png" href="img/svg/sun.svg"/>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400&family=Maven+Pro&family=Noto+Sans+JP&family=Roboto&display=swap"
+      rel="stylesheet">
+        <script type="text/javascript" src="js/insta.js"></script>
+        <script
+		src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v1.9.8/dist/alpine.js"
+		defer
+	></script>
+  </head>
+
+  <body class="font-body2">
+    <!-- Mobile header logo -->
+<div class="flex-shrink-0 block sm:hidden bg-white shadow-lg w-full justify-center py-3 px-2">
+  <img class="w-full h-auto align-middle "
+    src="img/logos/black-pink-700.svg" alt="" />
+</div>
+   <!-- Mobile Nav --> 
+   <header class=" sm:hidden fixed inset-x-0 bottom-0 border-b-4
+   border-pink-700 bg-white z-50">
+<nav class="mx-auto px-4 flex items-center justify-between py-4" x-data="{ isOpen: false }">
+   <div class="flex">
+       <div  @click="isOpen = true
+       $nextTick(() => $refs.navCloseButton.focus())
+       " >
+           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
+               <path class="heroicon-ui"
+                   d="M12 22a10 10 0 1 1 0-20 10 10 0 0 1 0 20zm0-2a8 8 0 1 0 0-16 8 8 0 0 0 0 16zm1-9h2a1 1 0 0 1 0 2h-2v2a1 1 0 0 1-2 0v-2H9a1 1 0 0 1 0-2h2V9a1 1 0 0 1 2 0v2z" />
+           </svg>
+
+          </div>
+
+   </div>
+   <div class="flex">
+       <div
+      
+       class="mr-4 py-1 px-3 text-xs
+                   border
+                   border-pink-500
+                   bg-white text-pink-500 rounded-full
+                   hover:text-white
+                   hover:bg-pink-700 focus:outline-none
+                   focus:text-white
+                   focus:bg-pink-500 transition
+                   duration-150 ease-in-out">
+           <a href ="#contact">Get in touch</a>
+   </div>
+
+       <div 
+      
+       class="p-1 py-1 px-3 text-xs
+                   lg:text-sm border
+                   border-gray-800
+                   bg-gray-800
+                   text-white rounded-full
+                   hover:text-gray-800
+                   hover:bg-white
+                   focus:outline-none focus:text-white
+                   focus:bg-gray-800
+                   transition duration-150
+                   ease-in-out"
+                   >
+                   <a href ="#services">We come to you</a>
+  </div>
+
+   </div>
+   <!--  x-show="isOpen"  -->
+   <div class="fixed bottom-0 left-0  w-full h-full bg-white" x-show="isOpen" @click.away="isOpen= false"
+       x-transition:enter="transition ease-out duration-500 -mb-64" x-transition:enter-start=""
+       x-transition:enter-end="transform -translate-y-64"
+       x-transition:leave="transition ease-out duration-500" x-transition:leave-start=""
+       x-transition:leave-end="transform translate-y-full">
+       <!-- logo-->
+       <div class="flex-shrink-0 block w-full justify-center py-3 px-2">
+           <img class="w-full h-auto align-middle " src="img/logos/black-pink-700.svg" alt="" />
+       </div>
+       <!-- wrapper-->
+       <div class="absolute inset-x-0 bottom-0">
+
+           <!--  SM-->
+           <div class="w-full py-6 px-4
+                   text-base">
+
+               <h4  @click= "isOpen = false"><a class="hover:text-pink-500" href="mailto:office@JollyLovelyLollyLady.co.uk">
+                       office@JollyLovelyLollyLady.co.uk</a></h4>
+               <h4  @click= "isOpen = false" class="pb-4"><a class="hover:text-pink-500" href="tel:07783978149">Tel: 0778 397
+                       8149</a></h4>
+               <h4  @click= "isOpen = false"><a class="hover:text-pink-500" href="https://www.facebook.com/JollyLovelyLollyLady/"
+                       target="_blank">FB:
+                       @JollyLovelyLollyLady</a></h4>
+               <h4  @click= "isOpen = false"><a class="hover:text-pink-500" href="https://twitter.com/jollylollylady"
+                       target="_blank">TW:
+                       @jollylollylady</a></h4>
+               <h4  @click= "isOpen = false" class="pb-4"><a class="hover:text-pink-500"
+                       href="https://www.instagram.com/jollylovelylollylady/" target="_blank">IG:
+                       @jollylovelylollylady</a></h4>
+
+           </div>
+
+           <!--  menu-->
+ <div class="flex justify-between border-t border-pink-500 bg-white">
+               <div class="w-1/4 text-center py-5 border-r border-pink-500">
+                   
+                   <a href="story.html"  @click= "isOpen = false" class=" align-middle
+                               px-3
+                               text-xs
+                               font-medium align-middle leading-16
+                               text-gray-700
+                               hover:text-pink-700
+                               focus:outline-none
+                               focus:text-pink-900
+                               transition duration-150
+                               ease-in-out">STORY</a>
+               </div>
+               <div class="w-1/4 text-center py-5 border-r border-pink-500">
+                   <a href="services.html"  @click= "isOpen = false" class=" align-middle
+                               px-3
+                               text-xs
+                               font-medium align-middle leading-16
+                               text-gray-700
+                               hover:text-pink-700
+                               focus:outline-none
+                               focus:text-pink-900
+                               transition duration-150
+                               ease-in-out">SERVICES</a>
+               </div>
+               <div class="w-1/4 text-center py-5">
+                   <a href="range.html"  @click= "isOpen = false" class=" align-middle
+                               px-3 
+                               text-xs
+                               font-medium align-middle leading-16
+                               text-gray-700
+                               hover:text-pink-700
+                               focus:outline-none
+                               focus:text-pink-900
+                               transition duration-150
+                               ease-in-out">RANGE</a>
+               </div>
+               <div class="w-1/4 text-center py-5 py-5 border-l border-pink-500">
+                <a href="https://jollylovelylollylady.slerp.com/"  @click= "isOpen = false" class=" align-middle
+                            px-3 
+                            text-xs
+                            font-medium align-middle leading-16
+                            text-gray-700
+                            hover:text-pink-700
+                            focus:outline-none
+                            focus:text-pink-900
+                            transition duration-150
+                            ease-in-out">SHOP</a>
+            </div>
+           </div> 
+
+
+           <!-- Botones menu-->
+           <div class="flex align-middle items-center bg-pink-700 justify-between px-4 py-4">
+               <div class="flex">
+                   <button class="text-2xl mr-3 mt-1 " @click="isOpen= false" x-ref="navCloseButton">
+                       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
+                           <path class="heroicon-ui"
+                               d="M12 22a10 10 0 1 1 0-20 10 10 0 0 1 0 20zm0-2a8 8 0 1 0 0-16 8 8 0 0 0 0 16zm4-8a1 1 0 0 1-1 1H9a1 1 0 0 1 0-2h6a1 1 0 0 1 1 1z" />
+                       </svg>
+                   </button>
+               </div>
+               <div class="flex">
+                   <div  @click= "isOpen = false" class="mr-4 py-1 px-3 text-xs
+                               border
+                               border-white
+                               bg-white text-pink-500 rounded-full
+                               hover:text-white
+                               hover:bg-pink-700 focus:outline-none
+                               focus:text-white
+                               focus:bg-pink-700 transition
+                               duration-150 ease-in-out">
+                      <a href ="#contact">Get in touch</a> 
+               </div>
+
+                   <div  @click= "isOpen = false" class="p-1 py-1 px-3 text-xs
+                               lg:text-sm border
+                               border-gray-800
+                               bg-gray-800
+                               text-white rounded-full
+                               hover:text-gray-800
+                               hover:bg-white
+                               focus:outline-none focus:text-white
+                               focus:bg-gray-800
+                               transition duration-150
+                               ease-in-out">
+                              <a href ="#services">We come to you</a> 
+              </div>
+
+               </div>
+           </div>
+       </div>
+   </div>
+
+</nav>
+</header>
+
+    <header class="w-full">
+
+
+   <!-- Nav --> 
+      <nav class=" hidden sm:block bg-white shadow-lg fixed inset-x-0 top-0  left-0 w-full z-50">
+        <div class="max-w-7xl mx-auto md:px-2 xl:px-8">
+          <div class="flex items-center justify-between h-16">
+
+                <div class="flex-1 flex items-center justify-center justify-between">
+                   <!-- este tiene que cambiar a block cuando clico boton y botones desaparecen-->
+                  <div class=" block lg:ml-6">
+                    <div class="flex">
+                      <a href="story.html" class="lg:ml-4 px-3 h-16
+                       text-xs lg:text-sm 
+                        font-medium  align-middle leading-16 text-gray-700
+                        border-b border-t
+                        border-transparent
+                        hover:text-pink-700
+                        hover:border-pink-700 hover:border-b
+                        hover:border-t focus:outline-none
+                        focus:text-pink-900
+                        transition duration-150
+                        ease-in-out">STORY</a>
+                      <a href="services.html" class="lg:ml-4 px-3 h-16
+                      text-xs lg:text-sm 
+                      font-medium align-middle leading-16 text-gray-700
+                        border-b border-t
+                        border-transparent
+                        hover:text-pink-700
+                        hover:border-pink-700 hover:border-b
+                        hover:border-t focus:outline-none
+                        focus:text-pink-900
+                        transition duration-150
+                        ease-in-out">SERVICES</a>
+                      <a href="range.html" class="lg:ml-4 px-3 h-16
+                      text-xs lg:text-sm 
+                      font-medium align-middle leading-16 text-gray-700
+                        border-b border-t
+                        border-transparent
+                        hover:text-pink-700
+                        hover:border-pink-700 hover:border-b
+                        hover:border-t focus:outline-none
+                        focus:text-pink-900
+                        transition duration-150
+                        ease-in-out">RANGE</a>
+                        <a href="https://jollylovelylollylady.slerp.com/" class="lg:ml-4 px-3 h-16
+                        text-xs lg:text-sm 
+                        font-medium align-middle leading-16 text-gray-700
+                          border-b border-t
+                          border-transparent
+                          hover:text-pink-700
+                          hover:border-pink-700 hover:border-b
+                          hover:border-t focus:outline-none
+                          focus:text-pink-900
+                          transition duration-150
+                          ease-in-out">SHOP</a>
+                    </div>
+                  </div>
+                  <!-- logo -->
+                  <div class="flex-shrink-0 ">
+                    <a href="index.html"  class="focus:outline-none"><img class="sm:h-6 xl:h-16 xl:py-3 w-auto md:pl-2 lg:pl-0"
+                      src="img/logos/black-pink-700.svg" alt="" /></a>
+                  </div>
+                   <!-- nav items -->
+                  <div class=" flex sm:flex sm:flex-shrink-0 items-center
+                    sm:pt-0 sm:pr-2 
+                    sm:static sm:inset-auto lg:mr-6 sm:pr-0">
+                    <div class="mr-4 py-1 px-3 text-xs lg:text-sm border
+                      border-pink-500
+                      bg-white text-pink-500 rounded-full hover:text-white
+                      hover:bg-pink-500 focus:outline-none focus:text-white
+                      focus:bg-pink-500 transition duration-150 ease-in-out">
+                      <a href ="#contact">
+                      Get in touch
+                      </a>
+                </div>
+  
+                    <div class="p-1 py-1 px-3 text-xs lg:text-sm border
+                      border-gray-800
+                      bg-gray-800
+                      text-white rounded-full hover:text-gray-800
+                      hover:bg-white
+                      focus:outline-none focus:text-white focus:bg-gray-800
+                      transition duration-150 ease-in-out">
+                      <a href ="#services">
+                      We come to you
+                      </a>
+                    </div>
+  
+                  </div>
+                
+
+                
+              </div>
+            </div>
+          </nav>
+  
+        </header>
+  
+
+        <!-- END NAVIGATION -->
+    <main class="w-full max-w-screen-2xl mx-auto">
+
+          <div class="hero">
+            <!-- hero section -->
+            <div class="hero-image min-h-full absolute overflow-hidden top-0
+              bg-pink-500">
+              <img class="absolute w-screen h-full
+                object-cover" src="img/banner/hero-2.jpg" alt="">
+            </div>
+
+          </div>
+
+
+          <!-- duo section -->
+          <div class="flex items-center justify-center -mt-24
+            z-20" >
+
+            <div class="z-30 text-center bg-white text-black font-bold
+              rounded-lg border
+              shadow-lg p-3 sm:p-10 w-4/5 lg:w-2/3">
+              <h1 class="text-2xl sm:text-4xl mt-4 mb-4 sm:mb-6">GELATO AND ICE LOLLIES ON
+                WHEELS</h1>
+                <div class="flex justify-center">
+              <div class="flex-shrink-0 items-center p-1 py-1 mb-6 sm:mb-0 sm:py-2 px-6 text-sm sm:text-base border
+                border-black
+                bg-black
+                text-white rounded-full hover:text-black hover:bg-white
+                focus:outline-none focus:text-white focus:bg-black
+                transition duration-150 ease-in-out">
+                <a href="range.html">OUR RANGE</a>
+              </div>
+            </div>
+
+              <div class="flex items-center justify-center">
+                <div class="w-4/5">
+                  <img class="object-contain" src="img/gelato-bg-white.jpg"
+                    alt="Gelato chocolate
+                    and
+                    pistachio">
+                </div>
+                <div class="w-4/5">
+                  <img class="object-contain" src="img/2-lollies-bg-white.jpg"
+                    alt="Ice
+                    Kitchen lollies">
+                </div>
+
+              </div>
+            </div>
+
+          </div>
+          <!-- SECTION -->
+
+          <div class="flex items-center justify-center mt-16 sm:mt-32 px-6">
+            <div class="text-black font-bold w-full sm:w-1/2">
+              <img class="w-10" src="img/svg/sun.svg" alt="">
+              <h2 class="mt-8 mb-24 text-2xl sm:text-3xl">
+                We sell fine lollies and the best gelato from artisan
+                producers
+                in our Italian three-wheeler Piaggio APE van on the streets
+                of
+                London and at private events.
+              </h2>
+            </div>
+          </div>
+          <div class="-mt-16 sm:-mt-20">
+            <div class="relative">
+              <img id="services" class="w-40 sm:w-64 absolute right-0 mr-6 sm:mr-40 " src="img/ape.svg" alt="">
+            </div>
+          </div>
+          <div class="mt-10">
+            <img src="img/wave.svg" alt="">
+          </div>
+          <!-- services section  -->
+          <section  class="bg-pink-500 -mt-1">
+
+            <div class="items-center justify-center">
+
+              <div class="text-center text-black font-bold
+                p-10">
+                <h1 class="text-2xl sm:text-4xl mt-4 mb-6 text-white">WE COME TO YOU</h1>
+                <div class="flex justify-center">
+                  <div class="flex-shrink-0 items-center p-1 py-1 sm:py-2 mb-4 sm:mb-0 px-6 text-sm sm:text-base border
+                  border-black
+                  bg-black
+                  text-white rounded-full hover:text-black hover:bg-white
+                  focus:outline-none focus:text-white focus:bg-black
+                  transition duration-150 ease-in-out">
+                  <a href="services.html">OUR SERVICES</a>
+                  </div>
+            </div>
+
+              </div>
+
+              <div class="flex items-stretch flex-wrap">
+
+                <div class="w-full md:w-1/2 xl:w-1/4 px-10 pt-2 sm:pt-10 sm:pb-20">
+                  <div class="relative flex flex-col min-w-0 break-words
+                    bg-white w-full mb-6 shadow-lg rounded-lg bg-white"><img
+                      alt="..."
+                      src="img/ice-cream-van-hampstead-spring.jpg"
+                      class="w-full align-middle rounded-t-lg"><blockquote
+                      class="relative p-8 mb-4"><svg
+                        preserveAspectRatio="none"
+                        xmlns="http://www.w3.org/2000/svg" viewBox="0 0 583
+                        95"
+                        class="absolute left-0 w-full block" style="height:
+                        95px; top: -94px;"><polygon points="-30,95 583,95
+                          583,65" class="text-white fill-current"></polygon></svg><h4
+                        class="text-xl font-bold text-black">PARLIAMENT HILL</h4><p
+                        class="text-md font-light mt-2
+                        text-pink-900">You can find us on top of Parliament
+                        Hill,
+                        just outside George Orwell house.</p></blockquote></div>
+                </div>
+
+
+
+                <div class="w-full md:w-1/2 xl:w-1/4 px-10 pt-10 sm:pb-20">
+                  <div class="relative flex flex-col min-w-0 break-words
+                    bg-white w-full mb-6 shadow-lg rounded-lg bg-white"><img
+                      alt="..."
+                      src="img/Exchange-Square.jpg"
+                      class="w-full align-middle rounded-t-lg"><blockquote
+                      class="relative p-8 mb-4"><svg
+                        preserveAspectRatio="none"
+                        xmlns="http://www.w3.org/2000/svg" viewBox="0 0 583
+                        95"
+                        class="absolute left-0 w-full block" style="height:
+                        95px; top: -94px;"><polygon points="-30,95 583,95
+                          583,65" class="text-white fill-current"></polygon></svg><h4
+                        class="text-xl font-bold text-black">OFFICE</h4><p
+                        class="text-md font-light mt-2
+                        text-pink-900">We bring lollies or gelato to your
+                        office.</p></blockquote></div>
+                </div>
+
+
+
+                <div class="w-full md:w-1/2 xl:w-1/4 px-10 pt-10 sm:pb-20">
+                  <div class="relative flex flex-col min-w-0 break-words
+                    bg-white w-full mb-6 shadow-lg rounded-lg bg-white"><img
+                      alt="..."
+                      src="img/HowTheLightGetsInFestival-UnStamped-210919-MANCPHOTO005.jpg"
+                      class="w-full align-middle rounded-t-lg"><blockquote
+                      class="relative p-8 mb-4"><svg
+                        preserveAspectRatio="none"
+                        xmlns="http://www.w3.org/2000/svg" viewBox="0 0 583
+                        95"
+                        class="absolute left-0 w-full block" style="height:
+                        95px; top: -94px;"><polygon points="-30,95 583,95
+                          583,65" class="text-white fill-current"></polygon></svg><h4
+                        class="text-xl font-bold text-black">FESTIVALS</h4><p
+                        class="text-md font-light mt-2
+                        text-pink-900">You can find us on top of Parliament
+                        Hill,
+                        just outside George Orwell house.</p></blockquote></div>
+                </div>
+
+                <div class="w-full md:w-1/2 xl:w-1/4 px-10 pt-10 pb-20">
+                  <div class="relative flex flex-col min-w-0 break-words
+                    bg-white w-full mb-6 shadow-lg rounded-lg bg-white"><img
+                      alt="..."
+                      src="img/delivery-2.jpg"
+                      class="w-full align-middle rounded-t-lg"><blockquote
+                      class="relative p-8 mb-4"><svg
+                        preserveAspectRatio="none"
+                        xmlns="http://www.w3.org/2000/svg" viewBox="0 0 583
+                        95"
+                        class="absolute left-0 w-full block" style="height:
+                        95px; top: -94px;"><polygon points="-30,95 583,95
+                          583,65" class="text-white fill-current"></polygon></svg><h4
+                        class="text-xl font-bold text-black">DELIVERIES</h4><p
+                        class="text-md font-light mt-2
+                        text-pink-900">We deliver to your house or office.
+                        Please
+                        contact us for more details.</p></blockquote></div>
+                </div>
+              </div>
+            </div>
+          </section>
+          <section class="mt-12">
+
+            <div class="sm:py-6 px-3">
+              <img src="img/logos/black-pink-700.svg" alt="">
+            </div>
+            <div id="contact" class="flex items-center justify-center">
+
+              <div class="text-black font-bold w-full sm:w-1/2 mt-16 sm:mt-24 px-6">
+                <h2  class="pb-8 text-2xl sm:text-3xl">Contact Us</h2>
+                <h3 class="pt-2 pb-2 text-xl sm:text-2xl">
+                  During Covid-19 Health emergency you won't find us at our
+                  usual spot in Hampstead Heath.
+                  But we will be delivering ice-lollies to some London
+                  postcodes.
+                </h3>
+                <h3 class="pt-2 pb-2 text-xl sm:text-2xl">
+                  Please get in touch to find out more.
+                </h3>
+                <div class="flex text-base sm:text-2xl pt-4 pb-2 items-center
+                  hover:text-pink-700">
+                  <img class="pr-2 h-5 sm:h-12" src="img/icons/phonelink_ring-24px.svg"
+                    alt="">
+                  <p><a class="hover:text-pink-700" href="tel:07783978149">0778
+                      397 8149</a></p>
+                </div>
+                <div class="flex text-base sm:text-2xl items-center">
+                  <img class="pr-2 h-5 sm:h-12" src="img/icons/email-24px.svg" alt="">
+                  <p><a class="hover:text-pink-700"
+                      href="mailto:office@JollyLovelyLollyLady.co.uk">office@JollyLovelyLollyLady.co.uk</a></p>
+                </div>
+              </div>
+            </div>
+          </section>
+          <section class="bg-black w-full mb-12 mt-16 sm:mt-24 flex ">
+            <div class="text-white text-sm sm:text-xl w-1/4 py-10 sm:py-16 px-2 text-center
+              hover:bg-pink-500 transition
+              duration-150 ease-in-out focus:outline-none">
+              <a href="https://www.instagram.com/jollylovelylollylady/"
+                target="_blank">Instagram</a>
+            </div>
+            <div class="text-white text-sm sm:text-xl w-1/4 py-10 sm:py-16 px-2 text-center
+              hover:bg-pink-500 transition
+              duration-150 ease-in-out focus:outline-none">
+              <a href="https://www.facebook.com/JollyLovelyLollyLady/"
+                target="_blank">Facebook</a>
+            </div>
+            <div class="text-white text-sm sm:text-xl  w-1/4 py-10 sm:py-16 px-2 text-center
+              hover:bg-pink-500 transition
+              duration-150 ease-in-out focus:outline-none">
+              <a href="https://twitter.com/jollylollylady" target="_blank">Twitter</a>
+            </div>
+            <div class="text-white text-sm sm:text-xl  w-1/4 py-10 sm:py-16 px-2 text-center
+              hover:bg-pink-500 transition
+              duration-150 ease-in-out focus:outline-none">
+              <a href="https://mailchi.mp/c54f00502d54/jollylovelylollylady"
+                target="_blank">Newsletter</a>
+            </div>
+
+          </section>
+          <section>
+            <h2 class="text-3xl text-center">From our Instagram</h2>
+            <h2 class="text-xl text-center"><a class="text-pink-700
+                hover:text-pink-900"
+                href="https://www.instagram.com/jollylovelylollylady/"
+                target="_blank">@JollyLovelyLollyLady</a></h2>
+            <div id="instafeed" class="mx-4 my-4 sm:mx-12 sm:my-12 grid gap-2 sm:gap-4 grid-cols-3 sm:grid-cols-5">
+            </div>
+            <script type="text/javascript">
+                var feed = new Instafeed({
+                  accessToken: 'IGQVJVQmRtQ0hyRVNra3VBc3FfZADVTX05GWS1TZAkxCVVhWUlZA4ZAVllR2thSnhHcENOUzVIdThReWhGcGpRSjZAlcmptZAEhnUzhKZAG5NWGJjdWNWeVZAYSGNjWV81ZAktiVFlYNFVvZAUtFRGFtQTJaR20zSgZDZD'
+                  
+                });
+               feed.run();
+            </script>
+          </section>
+          <!-- Footer -->
+          <section>
+            <div class="bg-black p-4 sm:p-16 flex flex-wrap">
+              <div class="w-full lg:w-1/3"><img class="h-32 lg:h-48" src="img/ape.png" alt=""></div>
+              <div class="w-full lg:w-1/3 py-6 sm:py-0 pl-2 text-base text-white">
+                <h4><a class="hover:text-pink-500"
+                    href="mailto:office@JollyLovelyLollyLady.co.uk">
+                    office@JollyLovelyLollyLady.co.uk</a></h4>
+                <h4 class="pb-4"><a class="hover:text-pink-500"
+                    href="tel:07783978149">Tel: 0778 397 8149</a></h4>
+                <h4><a class="hover:text-pink-500"
+                    href="https://www.facebook.com/JollyLovelyLollyLady/"
+                    target="_blank">FB: @JollyLovelyLollyLady</a></h4>
+                <h4><a class="hover:text-pink-500"
+                    href="https://twitter.com/jollylollylady" target="_blank">TW:
+                    @jollylollylady</a></h4>
+                <h4 class="pb-4"><a class="hover:text-pink-500"
+                    href="https://www.instagram.com/jollylovelylollylady/"
+                    target="_blank">IG: @jollylovelylollylady</a></h4>
+                
+                <div>
+
+                </div>
+
+              </div>
+                              <!-- Begin Mailchimp Signup Form -->
+                              <div id="mc_embed_signup" class="w-full lg:w-1/3 pl-2 pb-20 sm:pb-6 sm:pb-0 sm:pl-0">
+                                <h4 class="pb-2 text-lg text-white">Newsletter Signup</h4>
+                                <form
+                                  action="https://jollylovelylollylady.us8.list-manage.com/subscribe/post?u=2ed030367da230237d7a20950&amp;id=35c6b2fdbf"
+                                  method="post" id="mc-embedded-subscribe-form"
+                                  name="mc-embedded-subscribe-form" class="validate"
+                                  target="_blank" novalidate>
+                                  <div id="mc_embed_signup_scroll">
+                                    <h2></h2>
+              
+                                    <div class="mc-field-group flex text-base">
+                                      <label class="pr-2 text-pink-500" for="mce-EMAIL">Email
+                                        Address
+                                      </label>
+                                      <input type="email" value="" name="EMAIL"
+                                        class="required email bg-black border-b
+                                        border-pink-500 rounded-sm px-2" id="mce-EMAIL">
+                                    </div>
+                                    <div id="mce-responses" class="clear">
+                                      <div class="response" id="mce-error-response"
+                                        style="display:none"></div>
+                                      <div class="response" id="mce-success-response"
+                                        style="display:none"></div>
+                                    </div> <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+                                    <div style="position: absolute; left: -5000px;"
+                                      aria-hidden="true"><input type="text"
+                                        name="b_2ed030367da230237d7a20950_35c6b2fdbf"
+                                        tabindex="-1" value=""></div>
+                                    <div class="clear"><input type="submit"
+                                        value="Subscribe" name="subscribe"
+                                        id="mc-embedded-subscribe" class="button bg-black
+                                        border-red-500 border text-pink-500 text-sm mt-2
+                                        px-4 py-1 rounded hover:text-pink-900
+                                        hover:border-pink-900"></div>
+                                  </div>
+                                </form>
+                              </div>
+              
+                              <!--End mc_embed_signup-->
+            </div>
+          </section>
+        </main>
+      </body>
+
+    </html>
